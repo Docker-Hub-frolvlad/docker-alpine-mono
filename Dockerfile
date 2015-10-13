@@ -15,5 +15,6 @@ RUN apk add --update wget ca-certificates && \
     wget "https://www.archlinux.org/packages/extra/x86_64/mono/download/" -O mono.pkg.tar.xz && \
     cd / && \
     tar xJf /tmp/mono.pkg.tar.xz && \
+    mozroots --import --ask-remove && \
     apk del wget ca-certificates && \
     rm /tmp/* /var/cache/apk/*
