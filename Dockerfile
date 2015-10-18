@@ -5,7 +5,7 @@ FROM alpine:3.2
 # 2. hotfix /etc/nsswitch.conf, which is apperently required by glibc and is not used in Alpine Linux
 # 3. install mono package from Arch Linux
 
-RUN apk add --update wget ca-certificates && \
+RUN apk add --update wget ca-certificates tar xz && \
     cd /tmp && \
     wget "https://circle-artifacts.com/gh/andyshinn/alpine-pkg-glibc/6/artifacts/0/home/ubuntu/alpine-pkg-glibc/packages/x86_64/glibc-2.21-r2.apk" \
          "https://circle-artifacts.com/gh/andyshinn/alpine-pkg-glibc/6/artifacts/0/home/ubuntu/alpine-pkg-glibc/packages/x86_64/glibc-bin-2.21-r2.apk" && \
@@ -15,5 +15,6 @@ RUN apk add --update wget ca-certificates && \
     wget "https://www.archlinux.org/packages/extra/x86_64/mono/download/" -O mono.pkg.tar.xz && \
     cd / && \
     tar xJf /tmp/mono.pkg.tar.xz && \
-    apk del wget ca-certificates && \
+    mozroots --import --ask-remove && \
+    apk del wget ca-certificates tar xz && \
     rm /tmp/* /var/cache/apk/*
