@@ -1,3 +1,7 @@
+[![Docker Stars](https://img.shields.io/docker/stars/frolvlad/alpine-mono.svg?style=flat-square)](https://hub.docker.com/r/frolvlad/alpine-mono/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/frolvlad/alpine-mono.svg?style=flat-square)](https://hub.docker.com/r/frolvlad/alpine-mono/)
+
+
 Mono (C#) Docker image
 ======================
 
