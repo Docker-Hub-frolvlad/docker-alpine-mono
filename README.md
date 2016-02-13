@@ -21,8 +21,8 @@ Usage Example
 -------------
 
 ```bash
-$ echo -e 'using System; class MainClass { public static void Main (string[] args) { Console.WriteLine ("Hello World"); } }' > qq.mono
-$ docker run --rm -v `pwd`:/tmp frolvlad/alpine-mono sh -c 'mcs -out:/tmp/qq.exe /tmp/qq.mono && mono /tmp/qq.exe'
+$ echo 'using System; class MainClass { public static void Main (string[] args) { Console.WriteLine ("Hello World"); } }' > qq.mono
+$ docker run --rm -v "$(pwd)":/mnt frolvlad/alpine-mono sh -c "mcs -out:/mnt/qq.exe /mnt/qq.mono && mono /mnt/qq.exe"
 ```
 
 Once you have run these commands you will have `qq.exe` mono-executable in your
