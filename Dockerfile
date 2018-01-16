@@ -5,4 +5,4 @@ RUN apk add --no-cache --virtual=.build-dependencies wget ca-certificates tar xz
     tar -xJf "/tmp/mono.pkg.tar.xz" && \
     cert-sync /etc/ssl/certs/ca-certificates.crt && \
     apk del .build-dependencies && \
-    rm /tmp/*
+    rm .BUILDINFO .INSTALL .MTREE .PKGINFO /root/.wget-hsts /tmp/*
