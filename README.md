@@ -12,9 +12,17 @@ Download size of this image is only:
 
 [![](https://images.microbadger.com/badges/image/frolvlad/alpine-mono.svg)](http://microbadger.com/images/frolvlad/alpine-mono "Get your own image badge on microbadger.com")
 
-WARNING: This mono was compiled for Arch Linux and is ported to Alpine via
-[glibc hack](https://github.com/gliderlabs/docker-alpine/issues/11)! Ideally,
-Mono package should be added to Alpine repo, but I don't have much time now.
+There are also legacy images of Mono 4.8, 5.0, and 5.4 based on
+[glibc hack](https://github.com/gliderlabs/docker-alpine/issues/11):
+
+`4.8-glibc` -
+[![](https://images.microbadger.com/badges/image/frolvlad/alpine-mono:4.8-glibc.svg)](http://microbadger.com/images/frolvlad/alpine-mono:4.8-glibc "Get your own image badge on microbadger.com")
+
+`5.0-glibc` -
+[![](https://images.microbadger.com/badges/image/frolvlad/alpine-mono:5.0-glibc.svg)](http://microbadger.com/images/frolvlad/alpine-mono:5.0-glibc "Get your own image badge on microbadger.com")
+
+`5.4-glibc` -
+[![](https://images.microbadger.com/badges/image/frolvlad/alpine-mono:5.4-glibc.svg)](http://microbadger.com/images/frolvlad/alpine-mono:5.4-glibc "Get your own image badge on microbadger.com")
 
 
 Usage Example
