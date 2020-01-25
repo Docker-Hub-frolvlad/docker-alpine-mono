@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-glibc:alpine-3.10
+FROM frolvlad/alpine-glibc:alpine-3.11
 
 RUN apk add --no-cache --virtual=.build-dependencies wget ca-certificates tar xz && \
     wget "https://archive.archlinux.org/packages/m/mono/mono-4.8.0.495-1-x86_64.pkg.tar.xz" -O "/tmp/mono.pkg.tar.xz" && \
